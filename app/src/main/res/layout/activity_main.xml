@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/haiuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="62dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Hai User,"
+                    android:textSize="24dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/maripilih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:fontFamily="@font/reguler"
+                    android:text="Pilih kendaraan yuk!"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/btnbigfam"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/bigfam"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/btnsweetfam"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sweetfam"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/btnmatic"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/matic"
+                    tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/birunavbar"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:menu="@menu/bottom_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

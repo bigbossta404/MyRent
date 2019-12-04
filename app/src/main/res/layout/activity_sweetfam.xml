@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bigfam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_kterpilih"
+    tools:context=".sweetfam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/jenisK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/bold"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:layout_marginEnd="50dp"
+            android:text="Sweet Family"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/maripilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:fontFamily="@font/reguler"
+            android:text="Aktivitas ramean emang asik"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btnagya"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/toyota_agya"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btnayla"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/daihatsu_ayla"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btnbrio"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/honda_brio"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/birunavbar"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

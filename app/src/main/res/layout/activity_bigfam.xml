@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bigfam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_kterpilih"
+    tools:context=".bigfam">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/haiuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/bold"
+            android:text="Big Family"
+            android:textColor="#000"
+            android:textSize="24dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/maripilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/reguler"
+            android:layout_gravity="right"
+            android:layout_marginEnd="50dp"
+            android:text="Cocok liburan bareng keluarga"
+            android:textColor="#000"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btnluxio"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/daihatsu_luxio"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btnsigra"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/daihatsu_sigra"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btncalya"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/toyota_calya"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/birunavbar"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_terpilih"
+    tools:context=".terpilih_bf_luxio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/kembali"
+            android:layout_width="27dp"
+            android:layout_height="28dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-40dp"
+            app:srcCompat="@drawable/kembali"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="-44dp"
+            android:text="Daihatsu Luxio"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reguler"
+            android:text="2012"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="327dp"
+            android:layout_height="525dp"
+            android:src="@drawable/detail_luxio"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/reservasi_luxio"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-80dp"
+            android:background="#0096C5"
+            android:fontFamily="@font/bold"
+            android:text="Reservasi"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/birunavbar"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

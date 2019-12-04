@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23A5D1</color>
+    <color name="colorPrimaryDark">#37B5E2</color>
+    <color name="colorAccent">#37B5E2</color>
+    <color name="white">#fff</color>
+    <color name="black">#353535</color>
+    <color name="blue_light">#7FCFF8</color>
+    <color name="birunavbar">#0079B8</color>
+</resources>
