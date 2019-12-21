@@ -7,23 +7,36 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_home"
     tools:context=".MainActivity">
-
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/haiuser"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="62dp"
-                    android:fontFamily="@font/bold"
-                    android:text="Hai User,"
-                    android:textSize="24dp"
-                    tools:ignore="MissingConstraints" />
+                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/hai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="62dp"
+                            android:fontFamily="@font/bold"
+                            android:text="Hai"
+                            android:textSize="24dp"
+                            tools:ignore="MissingConstraints" />
+                        <TextView
+                            android:id="@+id/hiuser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="62dp"
+                            android:fontFamily="@font/bold"
+                            android:text="User,"
+                            android:textSize="24dp"
+                            tools:ignore="MissingConstraints" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/maripilih"
@@ -63,9 +76,8 @@
                     tools:ignore="MissingConstraints" />
 
         </LinearLayout>
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigationView"
+            android:id="@+id/navbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@color/birunavbar"

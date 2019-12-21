@@ -3,6 +3,8 @@ package com.example.myrent
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_bigfam.*
 import kotlinx.android.synthetic.main.activity_tr_brio.*
 
 class tr_brio : AppCompatActivity() {
@@ -18,6 +20,22 @@ class tr_brio : AppCompatActivity() {
         pesan_brio.setOnClickListener {
             val intent = Intent(this, tersewa_brio::class.java)
             startActivity(intent)
+        }
+        navbar.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navhome -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.navhistory -> {
+                    val intent = Intent(this, history::class.java)
+                    startActivity(intent)
+                }
+                R.id.navprofile -> {
+                    Toast.makeText(this,"belum buat", Toast.LENGTH_SHORT).show()
+                }
+            }
+            return@setOnNavigationItemSelectedListener true
         }
     }
 }

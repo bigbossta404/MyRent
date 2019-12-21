@@ -7,56 +7,70 @@
     android:background="@drawable/bg_terpilih"
     tools:context=".tr_agya">
 
-    <LinearLayout
-        android:id="@+id/atas"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topname"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/kembali"
-            android:layout_width="27dp"
-            android:layout_height="28dp"
-            android:layout_gravity="left"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="30dp"
-            app:srcCompat="@drawable/kembali"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/bold"
-            android:layout_marginTop="-40dp"
-            android:text="Toyota Agya"
-            android:textColor="#fff"
-            android:textSize="28dp"
-            tools:ignore="MissingConstraints" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:fontFamily="@font/reguler"
             android:text="2019"
             android:textColor="#fff"
             android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:ignore="MissingConstraints" />
 
         <ImageView
+            android:id="@+id/kembali"
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            android:layout_gravity="left"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kembali"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="46dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="Toyota Agya"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
             android:layout_width="327dp"
-            android:layout_height="290dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="40dp"
             android:src="@drawable/detail_top_agya"
             android:layout_gravity="center"/>
 
         <ImageView
             android:layout_width="327dp"
-            android:layout_height="270dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/detail_tr_luxio"
+            android:layout_height="240dp"
+            android:src="@drawable/detail_tr"
             android:layout_gravity="center"
             tools:ignore="ContentDescription"/>
         <Button
@@ -72,51 +86,50 @@
             android:textSize="20dp" />
 
 
-        <EditText
-            android:id="@+id/berangkat"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="-180dp"
-            android:layout_marginStart="60dp"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textSize="15dp"
-            android:hint="Mm/Dd/Yy" />
+<!--        <EditText-->
+<!--            android:id="@+id/berangkat"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:layout_marginTop="-180dp"-->
+<!--            android:layout_marginStart="60dp"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="15dp"-->
+<!--            android:hint="Mm/Dd/Yy" />-->
 
-        <EditText
-            android:id="@+id/berngkat"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="-41dp"
-            android:layout_marginEnd="60dp"
-            android:layout_gravity="right"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textSize="15dp"
-            android:hint="Mm/Dd/Yy" />
+<!--        <EditText-->
+<!--            android:id="@+id/berngkat"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:layout_marginTop="-41dp"-->
+<!--            android:layout_marginEnd="60dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="15dp"-->
+<!--            android:hint="Mm/Dd/Yy" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tanggal Berangkat"
-            android:textSize="15dp"
-            android:fontFamily="@font/bold"
-            android:layout_marginTop="-60dp"
-            android:layout_marginStart="60dp"
-            />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Tanggal Berangkat"-->
+<!--            android:textSize="15dp"-->
+<!--            android:fontFamily="@font/bold"-->
+<!--            android:layout_marginTop="-60dp"-->
+<!--            android:layout_marginStart="60dp"-->
+<!--            />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tanggal Kembali"
-            android:textSize="15dp"
-            android:fontFamily="@font/bold"
-            android:layout_marginTop="-24dp"
-            android:layout_marginEnd="60dp"
-            android:layout_gravity="right"
-            />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Tanggal Kembali"-->
+<!--            android:textSize="15dp"-->
+<!--            android:fontFamily="@font/bold"-->
+<!--            android:layout_marginTop="-24dp"-->
+<!--            android:layout_marginEnd="60dp"-->
+<!--            android:layout_gravity="right" />-->
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -7,24 +7,53 @@
     android:background="@drawable/bg_history"
     tools:context=".history">
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/transaksiku"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="50dp"
-            android:textSize="30dp"
-            android:fontFamily="@font/bold"
-            android:text="Transaksiku"/>
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/transaksiku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="30dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/bold"
+                android:text="Transaksiku"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/birunavbar">
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#7C95B8">
+
     </LinearLayout>
 
+
+    </LinearLayout>
+
+</ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationView"
         android:layout_width="match_parent"

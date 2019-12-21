@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">myRent</string>
+    <string name="app_name">MyRent</string>
 
     <string name="home">Home</string>
     <string name="history">Riwayat</string>
     <string name="profile">Profile</string>
+
 </resources>
